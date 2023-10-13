@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #c2c2c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+    box-shadow: 1px 2px 12px black;
+    overflow: hidden;
+    cursor: pointer;
+}
+.container:hover {
+    height: auto;
+    transition: all 0.3s ease;
+}
+.container:hover .social-media{
+    width: 100%;
+    display: block;
+    overflow: visible;
+}
+.title{
+    text-align: center;
+    text-decoration: underline;
+}
+.portfolio-image{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-image img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.about-me{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    padding: 0 12px 12px 28px;
+}
+.about-me p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.skills{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    padding: 0 12px 12px 28px;
+}
+.skills p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.social-media{
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 0 12px 12px 28px;
+    transition: 0.3s ease all;
+}
+.social-media .links{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.social-media .links i{
+    color: black;
+    transition: .3s ease all;
+}
+.social-media .links i:hover{
+    color: gray;
+
+}
+
+@media (min-width:320px) and (max-width: 424px)  {
+    .container{
+        width: 90%;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    .container h2{
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .container{
+        width: 70%;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    .container h2{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1024px){
+    
+    .container{
+        width: 50%;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    .container h2{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+    .container{
+        width: 42%;
+    }
+    .container p{
+        font-size: 16px;
+    }
+    .container h2{
+        font-size: 24px;
+    }
+}
+
+
+
