@@ -17,7 +17,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .container{
     width: 30%;
@@ -98,27 +97,15 @@ body{
     color: gray;
 
 }
-
-@media (min-width:320px) and (max-width: 424px)  {
+@media (min-width: 1025px) and (max-width: 1440px){
     .container{
-        width: 90%;
+        width: 42%;
     }
     .container p{
-        font-size: 14px;
-    }
-    .container h2{
         font-size: 16px;
     }
-}
-@media (max-width: 767px) {
-    .container{
-        width: 70%;
-    }
-    .container p{
-        font-size: 14px;
-    }
     .container h2{
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 @media (max-width: 1024px){
@@ -133,17 +120,45 @@ body{
         font-size: 18px;
     }
 }
-@media (min-width: 1025px) and (max-width: 1440px){
+@media (max-width: 767px) {
     .container{
-        width: 42%;
+        width: 70%;
     }
     .container p{
-        font-size: 16px;
+        font-size: 14px;
     }
     .container h2{
-        font-size: 24px;
+        font-size: 20px;
     }
 }
+@media (min-width:321px) and (max-width: 424px)  {
+    .container{
+        width: 90%;
+    }
+    .container p{
+        font-size: 10px;
+    }
+    .container h2{
+        font-size: 14px;
+    }
+}
+@media (max-width:320px) {
+    .container{
+        width: 94%;
+        padding: 12px 18px;
+    }
+    .container p{
+        font-size: 10px;
+    }
+    .container h2{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
 
 
 
